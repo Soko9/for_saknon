@@ -5,9 +5,10 @@ import 'package:for_saknon/src/modules/animals/ui/animals_screen.dart';
 import 'package:for_saknon/src/tile.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
 
   static const String route = "/";
+
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

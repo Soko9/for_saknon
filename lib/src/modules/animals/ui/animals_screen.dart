@@ -4,9 +4,10 @@ import 'package:for_saknon/src/modules/animals/models/animal.dart';
 import 'package:for_saknon/src/modules/animals/ui/animal_tile.dart';
 
 class AnimalsScreen extends StatelessWidget {
-  const AnimalsScreen({super.key});
 
   static const String route = "/animals";
+
+  const AnimalsScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

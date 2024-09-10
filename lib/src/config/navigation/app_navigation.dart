@@ -5,14 +5,17 @@ import '../../home_screen.dart';
 
 abstract class AppNavigation {
   static Route onGenerateRoute(RouteSettings settings) {
-    return switch (settings.name) {
-      HomeScreen.route => MaterialPageRoute(
+    switch (settings.name) {
+      case HomeScreen.route:
+        return MaterialPageRoute(
           builder: (_) => const HomeScreen(),
-        ),
-      AnimalsScreen.route => MaterialPageRoute(
+        );
+      case AnimalsScreen.route:
+        return MaterialPageRoute(
           builder: (_) => const AnimalsScreen(),
-        ),
-      _ => MaterialPageRoute(builder: (_) => Container()),
-    };
+        );
+      default:
+      return MaterialPageRoute(builder: (_) => Container());
+    }
   }
 }

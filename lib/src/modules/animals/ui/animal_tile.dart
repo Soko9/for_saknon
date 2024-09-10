@@ -6,10 +6,9 @@ import 'package:for_saknon/src/modules/animals/models/animal.dart';
 class AnimalTile extends StatelessWidget {
   final Animal animal;
 
-  const AnimalTile({
-    super.key,
+  const AnimalTile({Key? key, 
     required this.animal,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

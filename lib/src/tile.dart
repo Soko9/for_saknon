@@ -8,14 +8,13 @@ class Tile extends StatelessWidget {
   final Color color;
   final String image;
 
-  const Tile({
-    super.key,
+  const Tile({Key? key, 
     required this.callback,
     required this.labelEn,
     required this.labelAr,
     required this.color,
     required this.image,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
