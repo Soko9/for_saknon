@@ -4,7 +4,6 @@ import 'package:for_saknon/src/modules/animals/models/animal.dart';
 import 'package:for_saknon/src/modules/animals/ui/animal_tile.dart';
 
 class AnimalsScreen extends StatelessWidget {
-
   static const String route = "/animals";
 
   const AnimalsScreen({Key? key}) : super(key: key);
@@ -16,7 +15,7 @@ class AnimalsScreen extends StatelessWidget {
         leading: Container(
           margin: const EdgeInsets.all(4.0),
           decoration: BoxDecoration(
-            color: AppColors.animals.withOpacity(0.5),
+            color: AppColors.animals.withValues(alpha: 0.5),
             borderRadius: BorderRadius.circular(20.0),
           ),
           child: IconButton(

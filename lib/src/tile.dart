@@ -8,7 +8,8 @@ class Tile extends StatelessWidget {
   final Color color;
   final String image;
 
-  const Tile({Key? key, 
+  const Tile({
+    Key? key,
     required this.callback,
     required this.labelEn,
     required this.labelAr,
@@ -34,7 +35,7 @@ class Tile extends StatelessWidget {
               height: size.height * 0.2,
               padding: const EdgeInsets.all(12.0),
               decoration: BoxDecoration(
-                color: color.withOpacity(0.5),
+                color: color.withValues(alpha: 0.5),
                 borderRadius: BorderRadius.circular(8.0),
               ),
               alignment: Alignment.centerRight,
